@@ -5,26 +5,58 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     // Start is called before the first frame update
-    public float speed;                //Floating point variable to store the player's movement speed.
+    private Rigidbody2D rb2d; 
+    public float maxVelocity = 20;
+    public float rotationSpeed = 3;
 
-    private Rigidbody2D rb2d;  //Store a reference to the Rigidbody2D component required to use 2D Physics.
+    //shot information
+    public GameObject Shot;
+    public Transform shotSpawn;
+    public float fireRate = 0.5f;
+    private float nextFire = 0.5f;
 
-    void Start(){
+    #region MonoBehavoir API
+    private void Start(){
        rb2d = GetComponent<Rigidbody2D> ();
     }
 
-    void FixedUpdate() {        
-         //Store the current horizontal input in the float moveHorizontal.
-        float moveHorizontal = Input.GetAxis("Horizontal");
+    private void Update() {        
 
-        //Store the current vertical input in the float moveVertical.
-        float moveVertical = Input.GetAxis("Vertical");
+        //For Firing weapons
+        if(Input.GetButton("Fire1") && Time.time > nextFire){
+            nextFire = Time.time + fireRate;
+           Instantiate(Shot, shotSpawn.position, shotSpawn.rotation);
+        }
+       
 
-        //Use the two store floats to create a new Vector2 variable movement.
-        Vector2 movement = new Vector2(moveHorizontal, moveVertical);
+        //For player movement
+        float xAxis = Input.GetAxis("Horizontal");
+        float yAxis = Input.GetAxis("Vertical");
 
-        //Call the AddForce function of our Rigidbody2D rb2d supplying movement multiplied by speed to move our player.
-        rb2d.AddForce(movement * speed);
+        ThrustForward(yAxis);
+        Rotate(transform, xAxis * -rotationSpeed);     
     }
+
+    #endregion
+
+
+    #region Manuvering API
+    private void ClampVelocity(){
+        float x = Mathf.Clamp(rb2d.velocity.x, -maxVelocity, maxVelocity);
+        float y = Mathf.Clamp(rb2d.velocity.y, -maxVelocity, maxVelocity);
+
+        rb2d.velocity = new Vector2(x, y);
+    }
+
+    private void ThrustForward(float speed){
+        Vector2 force = transform.up * speed * 10;
+        rb2d.AddForce(force);
+    }
+
+    private void Rotate(Transform t, float amount){
+        t.Rotate(0, 0, amount);
+    }
+
+    #endregion
 
 }
