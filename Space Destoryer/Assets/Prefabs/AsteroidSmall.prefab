@@ -1,0 +1,139 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!50 &77694823336050843
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6102950772963926553}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 1
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &-4297681920943882403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6102950772963926553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86b8dade8c3421646816419627438f81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 77694823336050843}
+  maxThrust: 50
+  maxSpin: 50
+  health: 0
+  asteroidSize: 1
+  asteroidMed: {fileID: 3106808755294703768, guid: 1edc70baf1bba454f8d103e933e4bf3d,
+    type: 3}
+  asteroidSmall: {fileID: 6102950772963926553}
+  points: 10
+--- !u!1001 &4980751130114020319
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1273717868519207366, guid: 0b41583a19866d64b9483e371372b152,
+        type: 3}
+      propertyPath: m_Name
+      value: AsteroidSmall
+      objectReference: {fileID: 0}
+    - target: {fileID: 3398839194376591794, guid: 0b41583a19866d64b9483e371372b152,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.641
+      objectReference: {fileID: 0}
+    - target: {fileID: 3398839194376591794, guid: 0b41583a19866d64b9483e371372b152,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.674
+      objectReference: {fileID: 0}
+    - target: {fileID: 3398839194376591794, guid: 0b41583a19866d64b9483e371372b152,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3398839194376591794, guid: 0b41583a19866d64b9483e371372b152,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3398839194376591794, guid: 0b41583a19866d64b9483e371372b152,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3398839194376591794, guid: 0b41583a19866d64b9483e371372b152,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3398839194376591794, guid: 0b41583a19866d64b9483e371372b152,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3398839194376591794, guid: 0b41583a19866d64b9483e371372b152,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3398839194376591794, guid: 0b41583a19866d64b9483e371372b152,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3398839194376591794, guid: 0b41583a19866d64b9483e371372b152,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3398839194376591794, guid: 0b41583a19866d64b9483e371372b152,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3398839194376591794, guid: 0b41583a19866d64b9483e371372b152,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.6287404
+      objectReference: {fileID: 0}
+    - target: {fileID: 3398839194376591794, guid: 0b41583a19866d64b9483e371372b152,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.345768
+      objectReference: {fileID: 0}
+    - target: {fileID: 3861097418370609488, guid: 0b41583a19866d64b9483e371372b152,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 2112119169
+      objectReference: {fileID: 0}
+    - target: {fileID: 3861097418370609488, guid: 0b41583a19866d64b9483e371372b152,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0b41583a19866d64b9483e371372b152, type: 3}
+--- !u!1 &6102950772963926553 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1273717868519207366, guid: 0b41583a19866d64b9483e371372b152,
+    type: 3}
+  m_PrefabInstance: {fileID: 4980751130114020319}
+  m_PrefabAsset: {fileID: 0}

@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class ClampScript : MonoBehaviour
 {
-    private float clampY = 17f;
-    private float clampX = 20f;
+    public float clampY = 17f;
+    public float clampX = 20f;
     
     // Update is called once per frame
     void Update()

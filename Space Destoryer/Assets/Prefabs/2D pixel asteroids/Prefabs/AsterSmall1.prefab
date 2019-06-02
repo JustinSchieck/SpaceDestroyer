@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3398839194376591794}
   - component: {fileID: 3861097418370609488}
+  - component: {fileID: 403152949735426900}
   m_Layer: 0
   m_Name: AsterSmall1
   m_TagString: Untagged
@@ -56,6 +57,7 @@ SpriteRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -79,3 +81,51 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &403152949735426900
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1273717868519207366}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.4, y: 0.36}
+    newSize: {x: 0.4, y: 0.36}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.037501875, y: 0.16193148}
+      - {x: -0.010452516, y: 0.16347507}
+      - {x: -0.021692548, y: 0.18170221}
+      - {x: -0.12056641, y: 0.18040203}
+      - {x: -0.13477421, y: 0.16026257}
+      - {x: -0.15510994, y: 0.09984003}
+      - {x: -0.17634912, y: 0.08550671}
+      - {x: -0.18639997, y: 0.04080072}
+      - {x: -0.19999999, y: 0.036000535}
+      - {x: -0.19792408, y: -0.08235897}
+      - {x: -0.18068008, y: -0.090724126}
+      - {x: -0.1600002, y: -0.12800017}
+      - {x: -0.08140755, y: -0.13642517}
+      - {x: -0.02080071, y: -0.18319999}
+      - {x: 0.021286363, y: -0.18022098}
+      - {x: 0.060248327, y: -0.16617331}
+      - {x: 0.12319993, y: -0.12240031}
+      - {x: 0.17485015, y: -0.044332687}
+      - {x: 0.2015999, y: -0.018400654}
+      - {x: 0.2008778, y: 0.02830414}
+      - {x: 0.18080008, y: 0.080800295}
+      - {x: 0.14587358, y: 0.10725083}
+      - {x: 0.08720006, y: 0.13840023}
